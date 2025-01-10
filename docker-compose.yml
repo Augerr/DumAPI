@@ -1,0 +1,36 @@
+version: '3.4'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+
+  dumapi:
+    image: augerrr/dumapi:1.0.3
+    depends_on:
+     - dum_db
+    container_name: dummapi-service
+    ports:
+      - "8080:8080"
+    build:
+      context: ./DumAPI
+      dockerfile: Dockerfile
+    networks:
+      - dev
+  dum_db:
+    image: postgres:latest
+    container_name: dum_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=8051396
+      - POSTGRES_DB=DummyDB
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - app_data:/var/lib/postgresql/data
+    networks:
+      - dev
+volumes:
+  app_data:
