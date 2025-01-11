@@ -10,7 +10,6 @@ WORKDIR /src/dumapi
 COPY ["./DumAPI.csproj", "dumapi/"]
 RUN dotnet restore "./dumapi/DumAPI.csproj"
 COPY . .
-#WORKDIR "/src/DumAPI"
 RUN dotnet build "./DumAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
