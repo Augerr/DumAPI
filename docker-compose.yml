@@ -7,7 +7,7 @@ networks:
 services:
 
   dumapi:
-    image: augerrr/dumapi:1.0.5
+    image: augerrr/dumapi:1.0.6
     depends_on:
      - dum_db
     container_name: dummapi-service
