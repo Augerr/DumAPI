@@ -1,26 +1,29 @@
-version: '3.4'
-
 networks:
   dev:
     driver: bridge
 
 services:
-
-  dumapi:
-    image: augerrr/dumapi:1.0.6
-    depends_on:
-     - dum_db
-    container_name: dummapi-service
-    ports:
-      - "8080:8080"
+  dummbapi:
+    image: ${DOCKER_REGISTRY-}dummbapi
     build:
-      context: ./DumAPI
-      dockerfile: Dockerfile
+      context: ./DummbAPI
+      dockerfile: Dockerfile           
+    container_name: dummbapi-service
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=DummyDB;Username=postgres;Password=8051396
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+    depends_on:
+      - db
     networks:
       - dev
-  dum_db:
+  db:
     image: postgres:latest
-    container_name: dum_db
+    container_name: db
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=8051396
@@ -31,6 +34,6 @@ services:
     volumes:
       - app_data:/var/lib/postgresql/data
     networks:
-      - dev
+      - dev 
 volumes:
   app_data:

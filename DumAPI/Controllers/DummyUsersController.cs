@@ -2,25 +2,41 @@
 using DumAPI.Persistence.Models;
 using DumAPI.Persistence.Services;
 using DumAPI.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DumAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DummyUsersController(UserService service) : ControllerBase
     {
         private readonly UserService _service = service;
 
         // GET: api/DummyUsers
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DummyUser>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<DummyProfileDTO>>> GetUsers()
         {
             return Ok(await _service.GetAll());
         }
 
         // GET: api/DummyUsers/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<DummyUser>> GetDummyUser(int id)
+        public async Task<ActionResult<DummyProfileDTO>> GetDummyUserProfile(int id)
+        {
+            var dummyUser = await _service.Get(id);
+
+            if (dummyUser == null)
+            {
+                return Ok("Object not found");
+            }
+
+            return Ok(dummyUser);
+        }
+
+        // GET: api/DummyUsers/5
+        [HttpGet("{id}/Details")]
+        public async Task<ActionResult<DummyDetailsDTO>> GetDummyUserDetails(int id)
         {
             var dummyUser = await _service.Get(id);
 

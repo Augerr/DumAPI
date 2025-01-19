@@ -1,17 +1,17 @@
-﻿using DumAPI.Exceptions;
-using DumAPI.Persistence.Models;
+﻿using DummbAPI.Exceptions;
+using DummbAPI.Persistence.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DumAPI.Persistence.Services
+namespace DummbAPI.Persistence.Services
 {
-    public class UserService(DummyDbContext context)
+    public class DummyService(DummyDbContext context)
     {
         private readonly DummyDbContext _context = context;
 
-        public async Task<IEnumerable<DummyUser>> GetAll() => 
+        public async Task<IEnumerable<DummyUser>> GetAll() =>
             await _context.DummyUsers.ToListAsync();
 
-        public async Task<DummyUser?> Get(int id) => 
+        public async Task<DummyUser?> Get(int id) =>
             await _context.DummyUsers.FirstOrDefaultAsync(x => x.Id == id);
 
         public async Task<bool> Exists(string username) =>
@@ -23,7 +23,7 @@ namespace DumAPI.Persistence.Services
             {
                 throw new EntityExistsException<DummyUser>(entity);
             }
-            
+
             _context.DummyUsers.Add(entity);
 
             return await _context.SaveChangesAsync();
@@ -66,5 +66,17 @@ namespace DumAPI.Persistence.Services
 
         public async Task<IEnumerable<DummyUserRight>> GetUserRights(int id) =>
             await _context.DummyUserRights.Where(x => x.UserId == id).ToListAsync();
+
+        public async Task<IEnumerable<DummyRole>> GetRoles() =>
+            await _context.DummyRoles.ToListAsync();
+
+        public async Task<DummyRole?> GetRole(int id) =>
+            await _context.DummyRoles.FirstOrDefaultAsync(x => x.Id == id);
+
+        public async Task<IEnumerable<DummyRight>> GetRights() =>
+            await _context.DummyRights.ToListAsync();
+
+        public async Task<DummyRight?> GetRight(int id) =>
+            await _context.DummyRights.FirstOrDefaultAsync(x => x.Id == id);
     }
 }

@@ -9,9 +9,9 @@ namespace DumAPI.Controllers
     public class DummyRightsController : ControllerBase
     {
         private readonly ILogger _logger;
-        private readonly IService<DummyRight> _service;
+        private readonly RightService _service;
 
-        public DummyRightsController(IService<DummyRight> service, ILogger<DummyRightsController> logger)
+        public DummyRightsController(RightService service, ILogger<DummyRightsController> logger)
         {
             _service = service;
             _logger = logger;
