@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\DummbAPI\\DummbAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\controllers\\dummyrightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\controllers\\dummyrightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\controllers\\dummyrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\controllers\\dummyrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\controllers\\dummyuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\controllers\\dummyuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|c:\\dev\\dummbapi\\dummbapi\\dummbapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5FD4F758-4D8D-40F8-BC96-DC7DEA490611}|DummbAPI\\DummbAPI.csproj|solutionrelative:dummbapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07E99E72-6233-44B2-9275-93F2304C2E96}|docker-compose.dcproj|c:\\dev\\dummbapi\\dummbapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{07E99E72-6233-44B2-9275-93F2304C2E96}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07E99E72-6233-44B2-9275-93F2304C2E96}|docker-compose.dcproj|c:\\dev\\dummbapi\\dummbapi\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{07E99E72-6233-44B2-9275-93F2304C2E96}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 302,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DummyRightsController.cs",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Controllers\\DummyRightsController.cs",
+              "RelativeDocumentMoniker": "DummbAPI\\Controllers\\DummyRightsController.cs",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Controllers\\DummyRightsController.cs",
+              "RelativeToolTip": "DummbAPI\\Controllers\\DummyRightsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:57:32.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DummyRolesController.cs",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Controllers\\DummyRolesController.cs",
+              "RelativeDocumentMoniker": "DummbAPI\\Controllers\\DummyRolesController.cs",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Controllers\\DummyRolesController.cs",
+              "RelativeToolTip": "DummbAPI\\Controllers\\DummyRolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:56:32.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DummyUsersController.cs",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Controllers\\DummyUsersController.cs",
+              "RelativeDocumentMoniker": "DummbAPI\\Controllers\\DummyUsersController.cs",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Controllers\\DummyUsersController.cs",
+              "RelativeToolTip": "DummbAPI\\Controllers\\DummyUsersController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T16:05:33.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-01-19T14:49:06.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-01-19T14:46:44.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DummbAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DummbAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-19T14:35:37.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "DummbAPI\\appsettings.json",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\appsettings.json",
+              "RelativeToolTip": "DummbAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-18T19:34:26.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "DummbAPI\\Dockerfile",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Dockerfile",
+              "RelativeToolTip": "DummbAPI\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-18T19:24:23.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Program.cs",
+              "RelativeDocumentMoniker": "DummbAPI\\Program.cs",
+              "ToolTip": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\Program.cs",
+              "RelativeToolTip": "DummbAPI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:16:45.113Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
