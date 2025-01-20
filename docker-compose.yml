@@ -4,7 +4,7 @@ networks:
 
 services:
   dummbapi:
-    image: ${DOCKER_REGISTRY-}dummbapi
+    image: augerrr/dummbapi:1.0.0
     build:
       context: ./DummbAPI
       dockerfile: Dockerfile           
