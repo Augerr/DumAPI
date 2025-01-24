@@ -1,0 +1,1622 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DummbAPI | v1",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/DummyRights": {
+      "get": {
+        "tags": [
+          "DummyRights"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyRight"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyRight"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyRight"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DummyRights/{id}": {
+      "get": {
+        "tags": [
+          "DummyRights"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyRight3"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyRight3"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyRight3"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DummyRoles": {
+      "get": {
+        "tags": [
+          "DummyRoles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyRole3"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyRole3"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyRole3"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DummyRoles/{id}": {
+      "get": {
+        "tags": [
+          "DummyRoles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyRole5"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyRole5"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyRole5"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DummyUsers": {
+      "get": {
+        "tags": [
+          "DummyUsers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyUser9"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyUser9"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyUser9"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DummyUsers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DummyUser11"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DummyUser11"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DummyUser11"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyUser11"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyUser11"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyUser11"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DummyUsers/{id}": {
+      "get": {
+        "tags": [
+          "DummyUsers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyUser11"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyUser11"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DummyUser11"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DummyUsers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DummyUser11"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DummyUser11"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DummyUser11"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DummyUsers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DummyUsers/{id}/Rights": {
+      "get": {
+        "tags": [
+          "DummyUsers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyUserRight7"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyUserRight7"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DummyUserRight7"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DummyRight": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUserRight"
+            }
+          }
+        }
+      },
+      "DummyRight2": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUserRights"
+          }
+        }
+      },
+      "DummyRight3": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUserRight2"
+            }
+          }
+        }
+      },
+      "DummyRight4": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/properties/dummyUserRights"
+          }
+        }
+      },
+      "DummyRight5": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/items/properties/dummyUsers/items/properties/dummyUserRights/items"
+            }
+          }
+        }
+      },
+      "DummyRight6": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/properties/dummyUsers/items/properties/dummyUserRights/items"
+            }
+          }
+        }
+      },
+      "DummyRight7": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/items/properties/dummyUserRights/items"
+            }
+          }
+        }
+      },
+      "DummyRight8": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/properties/dummyUserRights/items"
+            }
+          }
+        }
+      },
+      "DummyRight9": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/items"
+            }
+          }
+        }
+      },
+      "DummyRole": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUser2"
+            }
+          }
+        }
+      },
+      "DummyRole2": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUser4"
+            }
+          }
+        }
+      },
+      "DummyRole3": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUser5"
+            }
+          }
+        }
+      },
+      "DummyRole4": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUsers"
+          }
+        }
+      },
+      "DummyRole5": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUser7"
+            }
+          }
+        }
+      },
+      "DummyRole6": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "$ref": "#/components/schemas/#/properties/dummyUsers"
+          }
+        }
+      },
+      "DummyRole7": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/items"
+            }
+          }
+        }
+      },
+      "DummyRole8": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUser"
+            }
+          }
+        }
+      },
+      "DummyRole9": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dummyUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUser14"
+            }
+          }
+        }
+      },
+      "DummyUser": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/items/properties/dummyUserRights/items"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole"
+          }
+        }
+      },
+      "DummyUser10": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole7"
+          }
+        }
+      },
+      "DummyUser11": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUserRight6"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/properties/dummyUserRights/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUser12": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole8"
+          }
+        }
+      },
+      "DummyUser13": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/items"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole9"
+          }
+        }
+      },
+      "DummyUser14": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/items/properties/user/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUser2": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUserRights/items/properties/user/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUserRights/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUser3": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/#/properties/dummyUserRights/items"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole2"
+          }
+        }
+      },
+      "DummyUser4": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/properties/dummyUserRights/items/properties/user/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/properties/dummyUserRights/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUser5": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUserRight3"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUsers/items/properties/dummyUserRights/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUser6": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUsers/items/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole4"
+          }
+        }
+      },
+      "DummyUser7": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUserRight4"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/properties/dummyUsers/items/properties/dummyUserRights/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUser8": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "$ref": "#/components/schemas/#/properties/dummyUsers/items/properties/dummyUserRights"
+          },
+          "role": {
+            "$ref": "#/components/schemas/DummyRole6"
+          }
+        }
+      },
+      "DummyUser9": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "employeeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dummyUserRights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DummyUserRight5"
+            }
+          },
+          "role": {
+            "$ref": "#/components/schemas/#/items/properties/dummyUserRights/items/properties/user/properties/role"
+          }
+        }
+      },
+      "DummyUserRight": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight2"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser"
+          }
+        }
+      },
+      "DummyUserRight2": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight4"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser3"
+          }
+        }
+      },
+      "DummyUserRight3": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight5"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser6"
+          }
+        }
+      },
+      "DummyUserRight4": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight6"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser8"
+          }
+        }
+      },
+      "DummyUserRight5": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight7"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser10"
+          }
+        }
+      },
+      "DummyUserRight6": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight8"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser12"
+          }
+        }
+      },
+      "DummyUserRight7": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rightId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "right": {
+            "$ref": "#/components/schemas/DummyRight9"
+          },
+          "user": {
+            "$ref": "#/components/schemas/DummyUser13"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "DummyRights"
+    },
+    {
+      "name": "DummyRoles"
+    },
+    {
+      "name": "DummyUsers"
+    }
+  ]
+}

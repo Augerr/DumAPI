@@ -247,3 +247,4 @@ C:\dev\DummbAPI\DummbAPI\DummbAPI\obj\Debug\net9.0\refint\DummbAPI.dll
 C:\dev\DummbAPI\DummbAPI\DummbAPI\obj\Debug\net9.0\DummbAPI.pdb
 C:\dev\DummbAPI\DummbAPI\DummbAPI\obj\Debug\net9.0\DummbAPI.genruntimeconfig.cache
 C:\dev\DummbAPI\DummbAPI\DummbAPI\obj\Debug\net9.0\ref\DummbAPI.dll
+C:\dev\DummbAPI\DummbAPI\DummbAPI\bin\Debug\net9.0\Controllers\Properties\launchSettings.json
