@@ -1,0 +1,41 @@
+﻿# Ignore .NET build artifacts
+bin/
+obj/
+out/
+
+# Ignore dependencies
+*.dll
+*.exe
+*.so
+*.pdb
+*.log
+*.lock
+*.cache
+
+# Ignore .NET user settings
+*.user
+*.suo
+*.vs/
+.vscode/
+.idea/
+
+# Ignore Docker build files
+docker-compose.override.yml
+Dockerfile.*
+
+# Ignore logs and temporary files
+logs/
+*.log
+!logs/.gitkeep
+temp/
+tmp/
+*.swp
+*.swn
+
+# Ignore environment and secrets files
+.env
+secrets.json
+appsettings.Development.json
+
+# Ignore database volume files
+pgdata/

@@ -1,6 +1,6 @@
-@DummbAPI_HostAddress = http://localhost:5203
+@DummbAPI_HostAddress = http://localhost:8080
 
-GET {{DummbAPI_HostAddress}}/weatherforecast/
+GET {{DummbAPI_HostAddress}}/api/Test
 Accept: application/json
 
 ###

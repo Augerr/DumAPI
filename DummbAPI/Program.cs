@@ -16,14 +16,11 @@ namespace DummbAPI
 
             builder.Services.AddDbContext<DummyDbContext>(options => 
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-            //builder.WebHost.ConfigureKestrel(serverOptions =>
-            //{
-            //    serverOptions.Listen(IPAddress.Any, 8081, listenOptions =>
-            //    {
-            //        listenOptions.UseHttps(); // Automatically uses the dev certificate
-            //    });
-            //});
-            builder.Services.AddControllers();
+            builder.WebHost.ConfigureKestrel(serverOptions =>
+            {
+                serverOptions.Listen(IPAddress.Any, 8080);
+            });
+            builder.Services.AddControllers();                                                                                                         
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddOpenApi();
 

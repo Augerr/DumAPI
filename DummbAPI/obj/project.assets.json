@@ -7696,11 +7696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\DummbAPI.csproj",
+      "projectUniqueName": "C:\\Projects\\API\\DumAPI\\DummbAPI\\DummbAPI.csproj",
       "projectName": "DummbAPI",
-      "projectPath": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\DummbAPI.csproj",
+      "projectPath": "C:\\Projects\\API\\DumAPI\\DummbAPI\\DummbAPI.csproj",
       "packagesPath": "C:\\Users\\auger\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\DummbAPI\\DummbAPI\\DummbAPI\\obj\\",
+      "outputPath": "C:\\Projects\\API\\DumAPI\\DummbAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
