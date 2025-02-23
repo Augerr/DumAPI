@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DummbAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78dcba1176b926ca37c2738ced08ca3750c57068")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e61396f83975294ba34964a358e2c142df687ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("DummbAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DummbAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

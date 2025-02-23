@@ -225,5 +225,15 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "DummbAPI.Controllers.TestController",
+    "Method": "TestConnection",
+    "RelativePath": "api/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

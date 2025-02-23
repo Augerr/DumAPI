@@ -1,31 +1,30 @@
 ﻿version: '3.8'
 
 services:
-  postgres:
-    container_name: postgres-db
+  api:
+    image: augerrr/dummbapi:latest  # Pull from Docker Hub
+    container_name: dotnet-api
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=DummyDB;Username=postgres;Password=8051396
+    depends_on:
+      - db
+
+  db:
     image: postgres:15
-    restart: unless-stopped
+    container_name: postgres-db
+    restart: always
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydatabase
+      - POSTGRES_DB=DummyDB
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=8051396
     volumes:
       - pgdata:/var/lib/postgresql/data
-
-  api:
-    container_name: dotnet-api
-    build: .
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Production
-      - ASPNETCORE_URLS=http://+:8080
-      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=mydatabase;Username=myuser;Password=mypassword
-    restart: unless-stopped
 
 volumes:
   pgdata:
